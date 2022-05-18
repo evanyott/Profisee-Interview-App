@@ -1,0 +1,181 @@
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="customers.component.css">
+
+<div id="wrapper">
+  <!-- Sidebar -->
+  <ul style="background-color: rgba(0,106,162,0.96)" class="navbar-nav  sidebar sidebar-dark accordion" id="accordionSidebar" >
+
+    <!-- Sidebar - Brand -->
+    <a  class="sidebar-brand d-flex align-items-center justify-content-center" href="home.component.html" style="margin-bottom: 20px">
+      <div>
+        <img class="rounded-bottom rounded-top" width="50" height="40" src="https://image.similarpng.com/very-thumbnail/2020/09/Red-bicycle-Premium-vector-PNG.png">
+      </div>
+      <div class="m-md-1">Bespoke</div>
+    </a>
+
+    <!-- Nav Item - Home -->
+    <li class="nav-item active">
+      <a class="nav-link" href="../home/home.component.html">
+        <span>Home</span></a>
+    </li>
+
+    <!-- Divider -->
+    <hr class="sidebar-divider my-0">
+
+    <!-- Nav Item - Salespersons -->
+    <li class="nav-item">
+      <a class="nav-link" href="../salespersons/salespersons.component.html">
+        <span>Salespersons</span></a>
+    </li>
+
+    <!-- Divider -->
+    <hr class="sidebar-divider my-0">
+
+    <!-- Nav Item - Sales -->
+    <li class="nav-item">
+      <a class="nav-link" href="../sales/sales.component.html">
+        <span>Sales</span></a>
+    </li>
+
+    <!-- Divider -->
+    <hr class="sidebar-divider my-0">
+
+    <!-- Nav Item - Products -->
+    <li class="nav-item">
+      <a class="nav-link" href="../products/products.component.html">
+        <span>Products</span></a>
+    </li>
+
+    <!-- Divider -->
+    <hr class="sidebar-divider my-0">
+
+    <!-- Nav Item - Customers -->
+    <li class="nav-item">
+      <a class="nav-link" href="../customers/customers.component.html">
+        <span>Customers</span></a>
+    </li>
+
+    <!-- Divider -->
+    <hr class="sidebar-divider my-0">
+
+  </ul>
+  <!--****************************** End of Sidebar **************************************-->
+
+
+  <!-- Content Wrapper-->
+  <div id="content-wrapper" class="d-flex flex-column" >
+
+
+    <!-- Main Content -->
+    <div id="content">
+
+
+      <!--****************************** Topbar ********************************************-->
+      <nav class="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow">
+
+        <!-- Topbar Navbar -->
+        <ul class="navbar-nav ml-auto">
+
+          <div class="topbar-divider d-none d-sm-block"></div>
+
+          <!-- Nav Item - User Information -->
+          <li>
+            <div class="align-content-lg-end">
+              <span class=""></span>
+            </div>
+          </li>
+
+          <li class="nav-item">
+            <div class="nav-link" href="/home">
+              <span class="mr-2 d-lg-inline text-gray-600 medium">Fred Rogers</span>
+              <img class=" rounded-circle" width="50" height="50"
+                   src="https://www.biography.com/.image/ar_1:1%2Cc_fill%2Ccs_srgb%2Cg_face%2Cq_auto:good%2Cw_300/MTY4MzI5NjA5OTc5NDM5MDYy/fred-rogers-1928---2003-of-the-television-series-mister-rogers-neighborhood-circa-1980s-photo-by-fotos-internationalcourtesy-of-getty-images.jpg">
+            </div>
+
+          </li>
+          <li class="nav-item">
+            <div class="nav-link" href="/">
+              <a href="/">
+                <button class="btn btn-md btn-outline-dark btn-block" type="button">Logout</button>
+              </a>
+            </div>
+
+          </li>
+
+        </ul>
+
+      </nav>
+      <!--****************************** End of Topbar ************************************************************-->
+
+      <!-- Begin Page Content -->
+      <div class="container-fluid">
+        <!-- Page Heading -->
+        <h1 class="h3 mb-2 text-gray-800">Customers</h1>
+        <p class="mb-4"></p>
+
+        <!-- DataTales Example -->
+        <div class="card shadow mb-4">
+          <div class="card-body">
+            <div class="table-responsive">
+              <div style="margin-bottom: 15px;">
+                <a href="/">
+                  <button class="btn btn-lg btn-info">
+                    New Customer
+                  </button>
+                </a>
+                <div class="form-group form-inline" style="float: right; margin-right: 5%;">
+                  Search: <input class="form-control ml-2" type="text"/>
+                </div>
+              </div>
+              <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                <thead>
+                <tr>
+                  <th>First Name</th>
+                  <th>Last Name</th>
+                  <th>Address</th>
+                  <th>Phone</th>
+                  <th>Start Date</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                  <td>Jacob</td>
+                  <td>Marley</td>
+                  <td>1225 Charles Circle</td>
+                  <td>505-123-4455</td>
+                  <td>1/2/21</td>
+                  <td><button class="btn btn-m btn-facebook">Edit</button></td>
+                </tr>
+                <tr>
+                  <td>{{ customer.firstName }}</td>
+                  <td>{{ customer.lastName }}</td>
+                  <td>{{ customer.address }}</td>
+                  <td>{{ customer.phone }}</td>
+                  <td>{{ customer.startDate }}</td>
+                  <td><button class="btn btn-m btn-facebook">Edit</button></td>
+                </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- /.container-fluid -->
+    </div>
+    <!-- End of Main Content -->
+  </div>
+  <!-- End of Content Wrapper -->
+
+  <!--End of Page wrapper-->
+</div>
+
+<!-- Bootstrap core JavaScript-->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
